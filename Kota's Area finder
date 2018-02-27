@@ -1,0 +1,40 @@
+// ConsoleApplication3.cpp : アプリケーションのエントリ ポイントを定義します。
+//
+
+#include "stdafx.h"
+#include "iostream"
+#include "string"
+using namespace std; 
+
+int main()
+{
+	
+	int r;
+	int R;
+	cout << endl << "Choose and enter what you want to calculate." << endl;
+	cout << endl << "A. Surface area for sphere" << endl;
+	cout << "B. Volume for sphere" << endl << endl;
+	
+	string ch;
+	cin >> ch;
+	if (ch == "A") {
+		cout << endl << "Enter your radius." << endl;
+		cin >> r;
+		cout << endl << "The surface area for sphere is....." << endl;
+		cout << endl << (4 * 3.14 * r * r) << endl;
+	}
+
+	else if (ch == "B") {
+		cout << endl << "Enter your radius." << endl;
+		cin >> R;
+		cout << endl << "The Volume for sphere is....." << endl;
+		cout << endl << (1.33 * 3.14 * R * R * R) << endl;
+	}
+
+	else (ch != "A", "B") {
+		cout << endl << "What you enter is not available" << endl;
+	}
+	
+    return 0;
+}
+
